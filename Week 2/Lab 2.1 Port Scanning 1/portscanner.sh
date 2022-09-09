@@ -1,5 +1,6 @@
 #!/bin/bash
-# This version is by John T. and Sarah F., and puts the full output into a text file.
+# This version of code is made by Sarah F. and John T.
+It puts the full output into a text file, and creates spaces between the different IP addresses.
 hostfile=$1
 portfile=$2
 echo "host,port" > results.txt
