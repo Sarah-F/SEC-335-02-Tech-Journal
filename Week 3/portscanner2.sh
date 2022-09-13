@@ -6,8 +6,6 @@ start=1
 end=254
 echo "ip,port"
 
-
-
 hostfile=$1
 portfile=$2
 echo "host,port"
