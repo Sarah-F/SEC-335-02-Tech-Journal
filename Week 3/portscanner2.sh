@@ -6,13 +6,10 @@ start=1
 end=254
 echo "ip,port"
 
-hostfile=$1
-portfile=$2
-echo "host,port"
-for host in $(cat $network_prefix); do
-  for port in $(cat $port); do
-    timeout .1 bash -c "echo >/dev/tcp/$host/$port" 2>/dev/null &&
-      echo "$host,$port"
+for ip in $(10.0.5/24); do
+  for port in $(53); do
+    timeout .1 bash -c "echo >/dev/tcp/$ip/$port" 2>/dev/null &&
+      echo "$ip,$port"
   done
   echo #creates space between each IP address
 done
