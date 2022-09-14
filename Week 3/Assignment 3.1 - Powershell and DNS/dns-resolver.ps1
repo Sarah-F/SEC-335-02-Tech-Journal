@@ -1,4 +1,3 @@
-#!/bin/bash
 param($network, $server)
   for ($i = 0; $i -lt 255; $i++)
   {
