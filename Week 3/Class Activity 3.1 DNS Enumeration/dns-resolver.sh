@@ -1,4 +1,3 @@
-#code by Sarah F. and John T.
 #!/bin/bash
 host=$1
 server=$2
