@@ -3,6 +3,8 @@ $range = 1..254
 foreach($r in $range)
 {
   Resolve-DnsName -DnsOnly "$network.$r" -Server "$server" -ErrorAction Ignore
+  echo "network: " $network "server:" $server
+
 }
 
 
