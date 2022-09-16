@@ -4,4 +4,3 @@ $range = 1..254
   {
     Resolve-DnsName -DnsOnly "$network.$r" -Server "$server" -ErrorAction Ignore
   }
-done
